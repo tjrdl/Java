@@ -1,4 +1,4 @@
-package chapter4;
+package Java.chapter4;
 
 import java.util.Iterator;
 import java.util.Scanner;
@@ -19,7 +19,9 @@ public class InputException {
 				
 			} catch (Exception e) {
 				System.out.println("정수가 아닙니다. 다시 입력하세요");
-				break;
+				sc.next();
+				i--;
+				continue;
 			}
 			sum += n ;
 		}
