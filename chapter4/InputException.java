@@ -24,6 +24,7 @@ public class InputException {
 				continue;
 			}
 			sum += n ;
+			System.out.println(sum);
 		}
 		System.out.println("sum = "+sum);
 		
