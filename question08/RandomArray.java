@@ -19,10 +19,14 @@ public class RandomArray {
 			int a = r.nextInt(100) + 1;
 			array.add(a);
 		}
-		for (int i = 1; i < amount + 1; i++) {
-			System.out.print(array.get(i) + "\t");
-			if (i % 10 == 0) {
-				System.out.println();
+		for (int i = 0; i < array.size(); i++) {
+			if (i == 0) {
+				System.out.print(array.get(i) + "\t");
+			} else {
+				System.out.print(array.get(i) + "\t");
+				if (i % 10 == 9) {
+					System.out.println();
+				}
 			}
 		}
 	}
