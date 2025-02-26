@@ -20,7 +20,6 @@ class Circle {
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
 		Circle circle = (Circle) obj;
-		
 		return x == circle.x && y == circle.y;
 	}
 	@Override
